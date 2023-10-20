@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HeroQuizApp</string>
+    <string name="programming_hero"><b>Programming</b> Hero</string>
+    <string name="quiz">Quiz</string>
+    <string name="start">Start</string>
+    <string name="highscore">Highscore</string>
+</resources>
