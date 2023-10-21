@@ -61,6 +61,9 @@ class QuizFragment : Fragment() {
         quizViewModel.getQuizQuestions().observe(viewLifecycleOwner, Observer {
             questionsList = it.toList()
             questionModel = questionsList[index]
+            if(questionsList.size>0) {
+                binding.progressBar.visibility = View.INVISIBLE
+            }
             setQuizQuestion()
             countdown()
             setSelectedAnswer()
@@ -100,7 +103,7 @@ class QuizFragment : Fragment() {
     }
 
     fun countdown() {
-        var duration: Long = TimeUnit.SECONDS.toMillis(3)
+        var duration: Long = TimeUnit.SECONDS.toMillis(5)
 
         object : CountDownTimer(duration, 1000) {
             override fun onTick(millisUntilFinished: Long) {

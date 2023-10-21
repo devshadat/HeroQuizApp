@@ -89,6 +89,23 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/logo" />
 
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateTint="#9C27B0"
+                android:max="3"
+                android:progress="100"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/quiz_option"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
 
             <TextView
                 android:id="@+id/current_quiz_question"
@@ -124,8 +141,8 @@
             android:layout_margin="8dp"
             android:background="@drawable/radio_selector"
             android:button="@android:color/transparent"
-            android:text="This is fisrt question"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            tools:text="This is fisrt question" />
 
         <RadioButton
             android:id="@+id/option_two"
@@ -134,8 +151,8 @@
             android:layout_margin="8dp"
             android:background="@drawable/radio_selector"
             android:button="@android:color/transparent"
-            android:text="This is fisrt question"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            tools:text="This is fisrt question" />
 
         <RadioButton
             android:id="@+id/option_three"
@@ -144,8 +161,8 @@
             android:layout_margin="8dp"
             android:background="@drawable/radio_selector"
             android:button="@android:color/transparent"
-            android:text="This is fisrt question"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            tools:text="This is fisrt question" />
 
         <RadioButton
             android:id="@+id/option_four"
@@ -154,8 +171,8 @@
             android:layout_margin="8dp"
             android:background="@drawable/radio_selector"
             android:button="@android:color/transparent"
-            android:text="This is fisrt question"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            tools:text="This is fisrt question" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
